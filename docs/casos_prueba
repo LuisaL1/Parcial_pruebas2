@@ -1,0 +1,22 @@
+# Casos de Prueba
+
+## Partición de Equivalencia
+
+| Caso | Monto | Resultado Esperado |
+|--------|--------|--------|
+| Inválido | 500 | Rechazada |
+| Válido | 5000 | Sin bonificación |
+| Válido | 10000 | 10% |
+| Válido | 30000 | 25% |
+| Inválido | 60000 | Rechazada |
+
+## Valores Límite
+
+| Monto | Resultado |
+|--------|--------|
+| 999 | Inválido |
+| 1000 | Válido |
+| 1001 | Válido |
+| 49999 | Válido |
+| 50000 | Válido |
+| 50001 | Inválido |
