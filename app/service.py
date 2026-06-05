@@ -8,3 +8,13 @@ def calcular_recarga(monto, premium):
     return {
         "valida": True
     }
+def calcular_recarga(monto, premium):
+
+    if monto < 1000 or monto > 50000:
+        return {
+            "valida": False
+        }
+
+    return {
+        "valida": True
+    }
