@@ -50,4 +50,27 @@ def calcular_recarga(monto, premium):
         "bonificacion": bonificacion
     }
 
+def calcular_recarga(monto, premium):
 
+    if monto < 1000 or monto > 50000:
+        return {
+            "valida": False,
+            "mensaje": "Monto invalido"
+        }
+
+    bonificacion = 0
+
+    if monto >= 30000:
+        bonificacion = 25
+
+    elif monto >= 10000:
+        bonificacion = 10
+
+    if premium:
+        bonificacion += 5
+
+    return {
+        "valida": True,
+        "monto": monto,
+        "bonificacion": bonificacion
+    }
