@@ -12,4 +12,8 @@ def test_recarga_10000():
     resultado = calcular_recarga(10000, False)
 
     assert resultado["bonificacion"] == 10
+def test_recarga_30000():
 
+    resultado = calcular_recarga(30000, False)
+
+    assert resultado["bonificacion"] == 25
